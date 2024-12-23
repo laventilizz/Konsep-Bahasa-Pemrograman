@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studiez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header">Studiez</h1>
+  </header>
+
+  <main class="container">
+    <div class="pomodoro">
+      <div class="menu">
+        <span class="pmdr">pomodoro</span>
+        <span class="sb">short break</span>
+        <span class="lb">long break</span>
+      </div>
+      
+      <div class="timer">
+        <p id="timer-display">25:00</p>
+        <button id="control-timer">start</button>
+        <button id="reset">reset</button>
+      </div>
+
+      <audio id="timerAudio">
+        <source src="assets/bell.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    
+    <div class="container2">
+      <div class="todolist">
+        <h5>To-do list!</h5>
+        <div class="todo-input">
+          <input type="text" id="new-task" placeholder="Add a new task...">
+          <button id="add-task">Add</button>
+        </div>
+        <ul id="todo-list"></ul> 
+      </div>
+
+      <div class="music">
+        <p>Background Noise</p>
+        <div class="white-noise">
+          <input type="checkbox" id="audio1Checkbox">
+          <label for="audio1Checkbox">White Noise</label>
+        </div>
+        <br>
+
+        <!-- Audio 1 -->
+          <audio id="audio1" src="assets/white-noise.mp3" preload="auto"></audio>
+        
+        <br>
+
+        <div class="rain-sound">
+          <input type="checkbox" id="audio2Checkbox">
+          <label for="audio2Checkbox"> Rain</label>
+        </div>
+        <br>
+      
+        <!-- Audio 2 -->
+        <audio id="audio2" src="assets/rain.mp3" preload="auto"></audio>
+
+        <br>
+        
+        <div class="ocean-sound">
+          <input type="checkbox" id="audio3Checkbox">
+          <label for="audio3Checkbox"> Ocean</label>
+        </div>
+        <br>
+      
+        <!-- Audio 3 -->
+        <audio id="audio3" src="assets/ocean.mp3" preload="auto"></audio>
+      </div>
+
+      <div class="spotify">
+        <h2>Spotify Player</h2>
+        <script src="https://sdk.scdn.co/spotify-player.js"></script>
+        <input type="text" id="spotify-link" placeholder="paste spotify url here...">
+        <button id="play-button">Play</button>
+        <div id="player-container">
+          <!-- Spotify Player akan muncul di sini -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+/* Coolvetiva Regular */
+@font-face {
+  font-family: "Coolvetica";
+  src: url('coolvetica/coolvetica\ rg.eot');
+  src: url('coolvetica/coolvetica\ rg.eot') format('embedded-opentype'),
+       url('coolvetica/coolvetica\ rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MAIN STYLE */
+body {
+  font-family: "Coolvetica", "PT Sans", Calibri, Tahoma, sans-serif;
+  font-weight: normal;
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  font-size: 25px;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+
+/*POMODORO*/
+.container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+  height: 520px;
+}
+
+.pomodoro {
+  position: relative; /* Agar lingkaran dapat diposisikan relatif terhadap pomodoro */
+  width: 50%;
+  height: 100%;
+  background-color: #fff; /* Beri warna background untuk card */
+  border-radius: 10px; /* Membuat sudut card melengkung */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk efek card */
+}
+
+.pomodoro {
+  width: 45%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  border-radius: 17px;
+}
+
+.menu {
+  display: inline-block;
+  margin-top: 60px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.pmdr, .sb {
+  margin-right: 15px;
+}
+
+.sb, .lb {
+  color: gray;
+}
+
+
+.timer #timer-display {
+  font-size: 175px;
+  padding: 0;
+  margin: 0;
+}
+
+#control-timer, #reset {
+  font-family: "Coolvetica";
+  border-radius: 10px;
+  font-size: 30px;
+  margin: 20px 10px;
+  padding: 0 20px 05px 20px;
+  border-width: 1.4px;
+  cursor: pointer;
+}
+
+#control-timer {
+  background-color: #FBFF4A;
+  color:#000000;
+}
+
+#control-timer:hover {
+  background-color: #cfd13f;
+  transition: background-color 0.3s;
+}
+
+#reset {
+  background-color: #FF619A;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#reset:hover {
+  background-color: #c54474;
+  transition: background-color 0.3s;
+}
+
+
+/*TO DO LIST*/
+.container2 {
+  width: 45%;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 0px 20px;
+  height: 485px;
+}
+
+.todolist {
+  background-color: #FF619A;
+  width: 100%;
+  border-radius: 17px;
+  padding: 15px;
+  margin-bottom: 0;
+  height: 45%;
+  overflow: auto;
+}
+
+.todolist h5 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  letter-spacing: 3px;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"], #new-task {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 20px;
+  font-family: "Coolvetica";
+}
+.todo-input button {
+  margin-left: 10px;
+  margin-top: 1px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background-color: #FBFF4A;
+  color: black;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Coolvetica";
+}
+.todo-input button:hover {
+  background-color: #cfd13f;
+  transition: background-color 0.3s;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+  background-color: #ffffff; /* Warna pink muda */
+  border-radius: 8px;
+  border: 1px solid #000000; /* Garis tipis */
+  height: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+li span {
+  font-weight: 500;
+  color: #000000;
+  flex: 1;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+  transform: scale(1.2); /* Perbesar checkbox */
+}
+
+button.edit, button.delete {
+  font-family: "Coolvetica";
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button.edit {
+  background-color: #FFD700; 
+}
+
+button.delete{
+  background-color: #fc1f4f;
+}
+
+button.delete:hover {
+  background-color: #b31537; 
+  transition: background-color 0.3s;
+}
+
+button.edit:hover {
+  background-color: #FFC107; 
+  transition: background-color 0.3s;
+}
+
+input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 8px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+/*SPOTIFY PLAYER */
+.spotify {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 48%;
+  height: 53%;
+  margin-top: 15px;
+}
+
+.spotify h2 {
+  margin-bottom: 5px;
+  margin-top: 0;
+  padding-top: 0;
+  color: #1DB954; /* Spotify Green */
+  font-size: 25px;
+}
+
+input.spotify {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#play-button {
+  font-family: "Coolvetica";
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#play-button:hover {
+  background-color: #178e3c;
+}
+
+#player-container {
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+/*WHITE NOISE*/
+.music {
+  background-color: #9747FF;
+  border-radius: 10px;
+  width: 45%;
+  height: 57%;
+  margin-top: 15px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.music p {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+/* Hapus tampilan default checkbox */
+.music input[type="checkbox"] {
+  display: none; /* Menyembunyikan checkbox asli */
+}
+
+/* Tampilan custom checkbox */
+label {
+  position: relative;
+  margin-left: 15px; 
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+
+label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #5f2da1;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Ketika checkbox dicentang */
+input[type="checkbox"]:checked + label::before {
+  background-color: #acdeff;
+  border-color: #5f2da1;
+}
+
+/* Centang di dalam kotak saat dicentang */
+input[type="checkbox"]:checked + label::after {
+  content: '✔';
+  position: absolute;
+  left: 4.5px;
+  top: 0px;
+  color: white;
+  font-size: 18px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 615px) {
+  .pomodoro {
+    width: 85%;
+    margin-top: 0;
+  }
+
+  .pmdr, .sb, .lb {
+    list-style: none;
+    display: list-item;
+    margin: 0 0 10px 0;
+    padding-top: 0;
+  }
+
+  .container2 {
+    width: 90%;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .todolist {
+    width: 100%;
+  }
+
+  .spotify {
+    width: 100%;
+  
+  }
+
+  .music {
+    width: 100%;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  button {
+    margin: 20px 5px;
+  }
+}
+
+@media screen and (max-width: 846px) {
+  .timer #timer-display {
+    font-size: 120px;
+  }
+}
